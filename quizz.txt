@@ -1,0 +1,500 @@
+[
+Q: 1 What is SQL and what does it stand for?
+A: 1 SQL stands for Structured Query Language. It is a standard programming language used to manage and manipulate relational databases.
+]
+
+[
+Q: 2 What is the purpose of the SELECT statement in SQL?
+A: 2 The SELECT statement is used to retrieve data from one or more tables in a database. It allows you to specify which columns to retrieve and apply conditions using the WHERE clause.
+]
+
+[
+Q: 3 How can you insert data into a table in SQL?  
+A: 3 To insert data into a table, use the INSERT INTO statement, specifying the table name and the values for each column. Example: `INSERT INTO table_name (column1, column2) VALUES (value1, value2);`.
+]
+
+[
+Q: 4 What is the difference between the WHERE and HAVING clauses in SQL?
+A: 4 The WHERE clause filters rows before grouping in a query, while the HAVING clause filters groups after grouping is performed.
+]
+
+[
+Q: 5 How do you update existing data in a table using SQL?
+A: 5 Use the UPDATE statement to modify existing records. Example: `UPDATE table_name SET column1 = value1 WHERE condition;`.
+]
+
+[
+Q: 6 What is the primary key in a database table?
+A: 6 A primary key is a unique identifier for each record in a table. It ensures that no duplicate or NULL values are allowed in the column(s) defined as the primary key.
+]
+
+[
+Q: 7 How can you delete data from a table in SQL?
+A: 7 To delete data, use the DELETE statement. Example: `DELETE FROM table_name WHERE condition;`. To delete all rows, use `DELETE FROM table_name;` without a WHERE clause.
+]
+
+[
+Q: 8 What is the difference between INNER JOIN and OUTER JOIN in SQL?
+A: 8 INNER JOIN returns rows that have matching values in both tables, while OUTER JOIN (LEFT, RIGHT, or FULL) includes matching rows and non-matching rows from one or both tables.
+]
+
+[
+Q: 9 How can you create a new table in SQL?
+A: 9 Use the CREATE TABLE statement. Example: `CREATE TABLE table_name (column1 datatype, column2 datatype, ...);`.
+]
+
+[
+Q: 10 What is the purpose of the DISTINCT keyword in SQL?
+A: 10 The DISTINCT keyword is used to remove duplicate values from the results of a SELECT query.
+]
+
+[
+Q: 11 What are SQL constraints?
+A: 11 SQL constraints are rules applied to table columns to enforce data integrity. Examples include PRIMARY KEY, FOREIGN KEY, NOT NULL, UNIQUE, and CHECK.
+]
+
+[
+Q: 12 How can you sort the result of a query in SQL?
+A: 12 Use the ORDER BY clause to sort query results by one or more columns. Example: `SELECT * FROM table_name ORDER BY column1 ASC, column2 DESC;`.
+]
+
+[
+Q: 13 What is a foreign key in SQL?
+A: 13 A foreign key is a column or set of columns in one table that references the primary key in another table to establish a relationship between the two tables.
+]
+
+[
+Q: 14 How can you count the number of rows in a table using SQL?
+A: 14 Use the COUNT() function. Example: `SELECT COUNT(*) FROM table_name;`.
+]
+
+[
+Q: 15 What is the GROUP BY clause used for in SQL?
+A: 15 The GROUP BY clause is used to group rows with the same values in specified columns and allows aggregate functions like SUM, AVG, COUNT, etc., to be applied to each group.
+]
+
+[
+Q: 16 How do you rename a table in SQL?
+A: 16 Use the RENAME statement or ALTER TABLE statement, depending on the database system. Example (MySQL): `RENAME TABLE old_table_name TO new_table_name;`.
+]
+
+[
+Q: 17 What is the difference between CHAR and VARCHAR in SQL?
+A: 17 CHAR is a fixed-length string data type, while VARCHAR is a variable-length string data type. CHAR pads extra spaces, while VARCHAR does not.
+]
+
+[
+Q: 18 What is a subquery in SQL?
+A: 18 A subquery is a query nested within another query. It is used to perform intermediate calculations or fetch data to be used in the main query.
+]
+
+[
+Q: 19 How do you add a new column to an existing table in SQL?
+A: 19 Use the ALTER TABLE statement. Example: `ALTER TABLE table_name ADD column_name datatype;`.
+]
+
+[
+Q: 20 What is an index in SQL and why is it used?
+A: 20 An index is a database object that improves the speed of data retrieval operations on a table by providing quick access to rows. It can be created on one or more columns.
+]
+
+[
+Q: 21 What is the purpose of the SQL LIMIT clause?
+A: 21 The LIMIT clause restricts the number of rows returned by a SELECT query. Example: `SELECT * FROM table_name LIMIT 10;` returns the first 10 rows.
+]
+
+[
+Q: 22 How can you remove a table from a database in SQL?
+A: 22 Use the DROP TABLE statement to delete a table and its data permanently. Example: `DROP TABLE table_name;`.
+]
+
+[
+Q: 23 What are SQL aggregate functions?
+A: 23 SQL aggregate functions perform calculations on a set of values and return a single value. Examples include COUNT(), SUM(), AVG(), MIN(), and MAX().
+]
+
+[
+Q: 24 What is a SQL View?
+A: 24 A SQL View is a virtual table that is based on the result of a SELECT query. It does not store data but provides a way to simplify complex queries.
+]
+
+[
+Q: 25 How do you rename a column in a table in SQL?
+A: 25 Use the ALTER TABLE statement. Example (MySQL): `ALTER TABLE table_name RENAME COLUMN old_name TO new_name;`.
+]
+
+[
+Q: 26 What is the difference between DELETE and TRUNCATE in SQL?
+A: 26 DELETE removes specific rows based on a condition and can be rolled back. TRUNCATE removes all rows from a table and cannot be rolled back, but it is faster.
+]
+
+[
+Q: 27 How do you check if a value exists in a table using SQL?
+A: 27 Use the EXISTS operator or a WHERE clause with a subquery. Example: `SELECT 1 FROM table_name WHERE condition LIMIT 1;`.
+
+]
+
+[
+Q: 28 What is a stored procedure in SQL?
+A: 28 A stored procedure is a precompiled collection of SQL statements stored in the database. It can be executed with parameters to perform tasks efficiently.
+]
+
+[
+Q: 29 How do you combine data from two tables in SQL?
+A: 29 Use JOIN clauses to combine data from tables. INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN are common types.
+]
+
+[
+Q: 30 How can you prevent SQL injection in your queries?
+A: 30 Use prepared statements with parameterized queries, avoid dynamic SQL, and validate user inputs to prevent SQL injection attacks.  
+]
+
+[
+Q: 31 What is the default sorting order in SQL?
+A: 31 The default sorting order in SQL is ascending (ASC).
+]
+
+[
+Q: 32 How do you calculate the average of a column in SQL?
+A: 32 Use the AVG() function. Example: `SELECT AVG(column_name) FROM table_name;`.
+]
+
+[
+Q: 33 How can you find duplicate rows in a table?
+A: 33 Use the GROUP BY clause with the HAVING clause. Example: `SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name HAVING COUNT(*) > 1;`.
+]
+
+[
+Q: 34 What is a trigger in SQL?
+A: 34 A trigger is a set of SQL statements that automatically execute in response to certain events (INSERT, UPDATE, DELETE) on a table.
+]
+
+[
+Q: 35 How do you get the current date and time in SQL?
+A: 35 Use built-in functions like NOW(), GETDATE(), or CURRENT_TIMESTAMP, depending on the database system.
+]
+
+[
+Q: 36 What is the difference between UNION and UNION ALL in SQL?
+A: 36 UNION combines results from two queries and removes duplicates, while UNION ALL includes all results, including duplicates.
+]
+
+[
+Q: 37 How can you create a unique constraint on a column in SQL?
+A: 37 Use the UNIQUE keyword when defining a column. Example: `CREATE TABLE table_name (column_name datatype UNIQUE);`.
+]
+
+[
+Q: 38 What is normalization in SQL?
+A: 38 Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity by dividing it into related tables.
+]
+
+[
+Q: 39 How do you find the length of a string in SQL?
+A: 39 Use the LENGTH() function (MySQL) or LEN() function (SQL Server). Example: `SELECT LENGTH('text');`.
+]
+
+[
+Q: 40 How do you concatenate strings in SQL?
+A: 40 Use the CONCAT() function (MySQL) or the `||` operator (PostgreSQL). Example: `SELECT CONCAT('Hello', ' ', 'World');`.
+]
+
+[
+Q: 41 What is the purpose of the COALESCE function in SQL?
+A: 41 The COALESCE function returns the first non-NULL value in a list of arguments. Example: `SELECT COALESCE(column1, column2, 'default') FROM table_name;`.
+]
+
+[
+Q: 42 How can you create a database in SQL?
+A: 42 Use the CREATE DATABASE statement. Example: `CREATE DATABASE database_name;`.
+]
+
+[
+Q: 43 What is a composite key in SQL?
+A: 43 A composite key is a combination of two or more columns that uniquely identify a row in a table.
+]
+
+[
+Q: 44 How can you drop a column from a table in SQL?
+A: 44 Use the ALTER TABLE statement with the DROP COLUMN clause. Example: `ALTER TABLE table_name DROP COLUMN column_name;`.
+]
+
+[
+Q: 45 What is a self-join in SQL?
+A: 45 A self-join is a join operation where a table is joined with itself to compare rows within the same table.
+]
+
+[
+Q: 46 What is the difference between IS NULL and = NULL in SQL?
+A: 46 IS NULL checks for NULL values, while = NULL is invalid because NULL cannot be compared using equality operators.
+]
+
+[
+Q: 47 How can you find the second highest salary in a table?
+A: 47 Use a subquery. Example: `SELECT MAX(salary) FROM table_name WHERE salary < (SELECT MAX(salary) FROM table_name);`.
+]
+
+[
+Q: 48 What is the difference between CROSS JOIN and INNER JOIN?
+A: 48 CROSS JOIN returns the Cartesian product of two tables (all combinations), while INNER JOIN returns only rows with matching values in both tables.
+]
+
+[
+Q: 49 What is the SQL CASE statement?
+A: 49 The CASE statement is used for conditional logic in SQL. Example: `SELECT column_name, CASE WHEN condition THEN value1 ELSE value2 END FROM table_name;`.
+]
+
+[
+Q: 50 How do you remove duplicate rows from a result set in SQL?
+A: 50 Use the DISTINCT keyword in the SELECT statement. Example: `SELECT DISTINCT column_name FROM table_name;`.
+]
+
+[
+Q: 51 How can you limit query results to a specific range of rows?
+A: 51 Use the OFFSET and FETCH or LIMIT clauses, depending on the database. Example: `SELECT * FROM table_name LIMIT 5 OFFSET 10;`.
+]
+
+[
+Q: 52 What is the purpose of the IN operator in SQL?
+A: 52 The IN operator is used to filter rows based on a list of values. Example: `SELECT * FROM table_name WHERE column_name IN (value1, value2, value3);`.
+]
+
+[
+Q: 53 What are SQL wildcards, and when are they used?
+A: 53 SQL wildcards, such as `%` and `_`, are used in the LIKE operator for pattern matching. `%` matches any sequence of characters, and `_` matches a single character.
+]
+
+[
+Q: 54 What is the purpose of the TRANSACTION in SQL?
+A: 54 A TRANSACTION is a sequence of SQL operations executed as a single unit of work. It ensures consistency and allows rollback in case of errors.
+]
+
+[
+Q: 55 How do you rollback a transaction in SQL?
+A: 55 Use the ROLLBACK statement to undo changes made by a transaction. Example: `ROLLBACK;`.
+]
+
+[
+Q: 56 How can you create an alias for a table or column in SQL?
+A: 56 Use the AS keyword to create an alias. Example: `SELECT column_name AS alias_name FROM table_name;`.
+]
+
+[
+Q: 57 What is a window function in SQL?
+A: 57 A window function performs calculations across a set of rows related to the current row, without collapsing the result set. Example: `ROW_NUMBER() OVER (PARTITION BY column_name ORDER BY another_column)`.
+]
+
+[
+Q: 58 What is the difference between a clustered and non-clustered index?
+A: 58 A clustered index determines the physical order of data in a table, while a non-clustered index does not affect the physical order but maintains a separate structure to improve lookup speed.
+]
+
+[
+Q: 59 How do you join more than two tables in SQL?
+A: 59 You can join more than two tables by adding multiple JOIN clauses. Example: `SELECT * FROM table1 INNER JOIN table2 ON condition INNER JOIN table3 ON condition;`.
+]
+
+[
+Q: 60 How can you remove all rows from a table but keep its structure?
+A: 60 Use the TRUNCATE TABLE statement. Example: `TRUNCATE TABLE table_name;`.
+]
+
+[
+Q: 61 What is a foreign key in SQL?
+A: 61 A foreign key is a column or a set of columns in one table that establishes a link between the data in two tables. It references a primary key in another table to enforce referential integrity.
+]
+
+[
+Q: 62 How do you update data in a table using SQL?
+A: 62 Use the UPDATE statement with a SET clause to modify data. Example: `UPDATE table_name SET column_name = value WHERE condition;`.
+]
+
+[
+Q: 63 What does the HAVING clause do in SQL?
+A: 63 The HAVING clause filters rows after aggregation (GROUP BY) based on a condition. Example: `SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name HAVING COUNT(*) > 5;`.
+]
+
+[
+Q: 64 What is the difference between CHAR and VARCHAR in SQL?
+A: 64 CHAR is a fixed-length data type, and VARCHAR is a variable-length data type. CHAR always uses the same storage, while VARCHAR adjusts based on the actual data length.
+]
+
+[
+Q: 65 How do you delete all rows from a table using SQL?
+A: 65 Use the DELETE statement without a WHERE clause. Example: `DELETE FROM table_name;`.
+]
+
+[
+Q: 66 What is the purpose of the GROUP BY clause in SQL?
+A: 66 The GROUP BY clause groups rows that have the same values in specified columns, often used with aggregate functions like COUNT(), SUM(), or AVG().
+]
+
+[
+Q: 67 How can you retrieve only the top N rows in SQL?
+A: 67 Use the LIMIT clause (MySQL, PostgreSQL) or the TOP keyword (SQL Server). Example: `SELECT TOP 5 * FROM table_name;`.
+]
+
+[
+Q: 68 What is an index in SQL?
+A: 68 An index is a database structure that improves query performance by allowing faster retrieval of records. It is created on columns frequently used in search or join operations.
+]
+
+[
+Q: 69 How do you create a unique index in SQL?
+A: 69 Use the CREATE UNIQUE INDEX statement. Example: `CREATE UNIQUE INDEX index_name ON table_name(column_name);`.
+]
+
+[
+Q: 70 What is the purpose of the EXPLAIN statement in SQL?
+A: 70 The EXPLAIN statement provides insights into how a query will be executed, showing details like table access methods, indexes used, and execution order.
+]
+
+[
+Q: 71 What is the difference between DELETE and DROP in SQL?
+A: 71 DELETE removes rows from a table but retains its structure, while DROP deletes the entire table or database along with its data.
+]
+
+[
+Q: 72 What does the UNION operator do in SQL?
+A: 72 The UNION operator combines results from two or more SELECT queries, removing duplicates by default.
+]
+
+[
+Q: 73 How do you change the data type of a column in SQL?
+A: 73 Use the ALTER TABLE statement with MODIFY or ALTER COLUMN, depending on the database. Example: `ALTER TABLE table_name MODIFY column_name new_data_type;`.
+]
+
+[
+Q: 74 What is the difference between INNER JOIN and LEFT JOIN?
+A: 74 INNER JOIN returns rows with matching values in both tables, while LEFT JOIN returns all rows from the left table and matching rows from the right table, or NULL if there is no match.
+]
+
+[
+Q: 75 How do you count the number of rows in a table in SQL?
+A: 75 Use the COUNT() function. Example: `SELECT COUNT(*) FROM table_name;`.
+]
+
+[
+Q: 76 What is a subquery in SQL?
+A: 76 A subquery is a query nested inside another query, often used in SELECT, INSERT, UPDATE, or DELETE statements.
+]
+
+[
+Q: 77 How do you add a NOT NULL constraint to a column in SQL?
+A: 77 Use the ALTER TABLE statement with MODIFY or ALTER COLUMN. Example: `ALTER TABLE table_name MODIFY column_name datatype NOT NULL;`.
+]
+
+[
+Q: 78 What is the difference between SQL and NoSQL databases?
+A: 78 SQL databases are relational, use structured schemas, and support ACID transactions, while NoSQL databases are non-relational, flexible in schema design, and often optimized for scalability and performance.
+]
+
+[
+Q: 79 How do you rename a table in SQL?
+A: 79 Use the RENAME statement or ALTER TABLE command. Example: `ALTER TABLE old_table_name RENAME TO new_table_name;`.
+]
+
+[
+Q: 80 What is the difference between PRIMARY KEY and UNIQUE constraints?
+A: 80 A PRIMARY KEY uniquely identifies each row in a table and cannot contain NULL values. A UNIQUE constraint also ensures uniqueness but allows a single NULL value.
+]
+
+[
+Q: 81 What is the purpose of the SQL BETWEEN operator?
+A: 81 The BETWEEN operator is used to filter rows based on a range of values. Example: `SELECT * FROM table_name WHERE column_name BETWEEN value1 AND value2;`.
+]
+
+[
+Q: 82 How do you find rows with NULL values in SQL?
+A: 82 Use the IS NULL operator. Example: `SELECT * FROM table_name WHERE column_name IS NULL;`.
+]
+
+[
+Q: 83 What is the purpose of the DISTINCT keyword in SQL?
+A: 83 The DISTINCT keyword eliminates duplicate rows from the result set. Example: `SELECT DISTINCT column_name FROM table_name;`.
+]
+
+[
+Q: 84 How can you add a column to an existing table in SQL?
+A: 84 Use the ALTER TABLE statement with the ADD COLUMN clause. Example: `ALTER TABLE table_name ADD column_name datatype;`.
+]
+
+[
+Q: 85 What is the difference between a natural join and an inner join?
+A: 85 A natural join automatically joins tables based on all columns with the same names, while an inner join requires explicit join conditions.
+]
+
+[
+Q: 86 How do you calculate the total sum of a column in SQL?
+A: 86 Use the SUM() function. Example: `SELECT SUM(column_name) FROM table_name;`.
+]
+
+[
+Q: 87 What is the purpose of the SQL RANK() function?
+A: 87 The RANK() function assigns a rank to each row within a result set based on a specified order, with gaps in ranks for ties.
+]
+
+[
+Q: 88 How do you insert data into a table in SQL?
+A: 88 Use the INSERT INTO statement. Example: `INSERT INTO table_name (column1, column2) VALUES (value1, value2);`.
+]
+
+[
+Q: 89 What is a correlated subquery in SQL?
+A: 89 A correlated subquery is a subquery that depends on the outer query for its values, executing once for each row processed by the outer query.
+]
+
+[
+Q: 90 How do you create a primary key on an existing table?
+A: 90 Use the ALTER TABLE statement. Example: `ALTER TABLE table_name ADD PRIMARY KEY (column_name);`.
+]
+
+[
+Q: 91 What does the REPLACE statement do in SQL?
+A: 91 The REPLACE statement inserts a row if it doesn’t exist or updates the row if it does exist, typically supported in MySQL.
+]
+
+[
+Q: 92 How can you merge two result sets with all rows included, even duplicates?
+A: 92 Use the UNION ALL operator. Example: `SELECT * FROM table1 UNION ALL SELECT * FROM table2;`.
+]
+
+[
+Q: 93 How do you retrieve the first N characters of a string in SQL?
+A: 93 Use the SUBSTRING() function. Example: `SELECT SUBSTRING(column_name, 1, N) FROM table_name;`.
+]
+
+[
+Q: 94 What is the SQL CONCAT function used for?
+A: 94 The CONCAT function combines multiple strings into one. Example: `SELECT CONCAT('Hello', ' ', 'World');`.
+]
+
+[
+Q: 95 What is the difference between ACID properties and BASE principles in databases?
+A: 95 ACID ensures transactional consistency (Atomicity, Consistency, Isolation, Durability) in SQL databases, while BASE (Basically Available, Soft State, Eventually Consistent) is used in NoSQL for scalability and flexibility.
+]
+
+[
+Q: 96 How do you find the maximum value in a column?
+A: 96 Use the MAX() function. Example: `SELECT MAX(column_name) FROM table_name;`.
+]
+
+[
+Q: 97 How do you rename a database in SQL?
+A: 97 Not all databases support renaming directly. For MySQL, use `RENAME DATABASE old_name TO new_name;` or dump and recreate the database.
+]
+
+[
+Q: 98 What is the purpose of the SQL LIKE operator?
+A: 98 The LIKE operator is used for pattern matching in a WHERE clause. Example: `SELECT * FROM table_name WHERE column_name LIKE 'pattern%';`.
+]
+
+[
+Q: 99 How do you find rows with non-NULL values in SQL?
+A: 99 Use the IS NOT NULL operator. Example: `SELECT * FROM table_name WHERE column_name IS NOT NULL;`.
+]
+
+[
+Q: 100 What is the difference between ROW_NUMBER() and RANK() functions?
+A: 100 ROW_NUMBER() assigns a unique number to each row, while RANK() assigns the same rank to tied values but leaves gaps in numbering for subsequent rows.
+]

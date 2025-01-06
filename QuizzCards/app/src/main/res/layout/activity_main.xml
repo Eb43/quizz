@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/load_quiz_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Quiz"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+    <FrameLayout
+        android:id="@+id/card_front"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_blue_light">
+
+        <TextView
+            android:id="@+id/front_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Please load a file with quizz cards. Press LOAD QUIZZ button to select quizz cards file"
+            android:textSize="20sp"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/card_back"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="#8BC34A"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Please load a file with quizz cards. Press LOAD QUIZZ button to select quizz cards file"
+            android:textSize="20sp"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+</RelativeLayout>
